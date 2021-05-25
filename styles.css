@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    animation: move .4s linear .2s 5 forwards; 
+}
+
+.displayIdNumber {
+    visibility: hidden;
+}
+
+.square:hover > .displayIdNumber {
+    color: white;
+    visibility: visible;
+}
+
+.button {
+    user-select: none;
+}
